@@ -135,25 +135,29 @@ namespace VIPBrowserLibrary.BBS.Common
 		/// </summary>
 		public static void CreateOrUpdateSamba24SettingFile()
 		{
-			HttpClient bas = new HttpClient("http://nullpo.s101.xrea.com/samba24/");
-			bas.IsOtherSiteRequest = true;
-			bas.GetStringSync();
-			var se = bas.Headers.GetValues("Set-Cookie")[0];
-			var ss = se.Substring(8, 74).Replace(" ","").Replace(";path=/","");
-			HttpClient hc = new HttpClient("http://nullpo.s101.xrea.com/samba24/conv.xcg?browser=v2c&decsec=majority&offset=0&newline=crlf&output=view");
-			hc.UserAgent = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36";
-			hc.IsOtherSiteRequest = true;
-			hc.Referer = "http://nullpo.s101.xrea.com/samba24/";
-			hc.Cookies = new System.Net.CookieCollection();
-			hc.Cookies.Add(new System.Net.Cookie("form", "v2c&majority&0&view&crlf", "/", "nullpo.s101.xrea.com"));
-			hc.Cookies.Add(new System.Net.Cookie("session", ss, "/", "nullpo.s101.xrea.com"));
-			string data = hc.GetStringSync();
-			using (var str = File.Create(Samba24.Samba24SettingPath))
-			{
-				var bytes = UTF8Encoding.UTF8.GetBytes(data);
-				str.Write(bytes, 0, bytes.Length);
-				str.Flush();
-			}
+            try
+            {
+                HttpClient bas = new HttpClient("http://nullpo.s101.xrea.com/samba24/");
+                bas.IsOtherSiteRequest = true;
+                bas.GetStringSync();
+                var se = bas.Headers.GetValues("Set-Cookie")[0];
+                var ss = se.Substring(8, 74).Replace(" ", "").Replace(";path=/", "");
+                HttpClient hc = new HttpClient("http://nullpo.s101.xrea.com/samba24/conv.xcg?browser=v2c&decsec=majority&offset=0&newline=crlf&output=view");
+                hc.UserAgent = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36";
+                hc.IsOtherSiteRequest = true;
+                hc.Referer = "http://nullpo.s101.xrea.com/samba24/";
+                hc.Cookies = new System.Net.CookieCollection();
+                hc.Cookies.Add(new System.Net.Cookie("form", "v2c&majority&0&view&crlf", "/", "nullpo.s101.xrea.com"));
+                hc.Cookies.Add(new System.Net.Cookie("session", ss, "/", "nullpo.s101.xrea.com"));
+                string data = hc.GetStringSync();
+                using (var str = File.Create(Samba24.Samba24SettingPath))
+                {
+                    var bytes = UTF8Encoding.UTF8.GetBytes(data);
+                    str.Write(bytes, 0, bytes.Length);
+                    str.Flush();
+                }
+            }
+            catch { }
 		}
 	}
 }
