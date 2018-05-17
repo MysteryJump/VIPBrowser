@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VIPBrowser</RootNamespace>
+    <AssemblyName>VIPBrowser</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AwaitSet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VIPBrowserLibrary\AwaitSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\syunsuke\Desktop\twin2372src\新しいフォルダー\Twintail Project\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ch2BrowserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ch2BrowserControl.Designer.cs">
+      <DependentUpon>ch2BrowserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\AAManageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\AAManageDialog.Designer.cs">
+      <DependentUpon>AAManageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\AllLoginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\AllLoginDialog.Designer.cs">
+      <DependentUpon>AllLoginDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\DockWritePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\DockWritePanel.Designer.cs">
+      <DependentUpon>DockWritePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\HighNGCollectionEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\HighNGFunctionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\HighNGFunctionDialog.Designer.cs">
+      <DependentUpon>HighNGFunctionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\NewThreadWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\NewThreadWindow.Designer.cs">
+      <DependentUpon>NewThreadWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\NGCollectionEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\NGFunctionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\NGFunctionDialog.Designer.cs">
+      <DependentUpon>NGFunctionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\OriginalComponentThreadViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\Popup\HtmlPopup.cs" />
+    <Compile Include="ch2Browser\RefreshBoardList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\RefreshBoardList.Designer.cs">
+      <DependentUpon>RefreshBoardList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\SearchNextThreadDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\SearchNextThreadDialog.Designer.cs">
+      <DependentUpon>SearchNextThreadDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadListNGCollectionEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadListNGCollectionEditDialog.Designer.cs">
+      <DependentUpon>ThreadListNGCollectionEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadListNGFunctionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadListNGFunctionDialog.Designer.cs">
+      <DependentUpon>ThreadListNGFunctionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadListSearcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadListSearcher.Designer.cs">
+      <DependentUpon>ThreadListSearcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadListStyleChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadListStyleChange.Designer.cs">
+      <DependentUpon>ThreadListStyleChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadListStyleColorChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadListStyleColorChangeForm.Designer.cs">
+      <DependentUpon>ThreadListStyleColorChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadWriteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\ThreadWriteDialog.Designer.cs">
+      <DependentUpon>ThreadWriteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\UploadDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\UploadDialog.Designer.cs">
+      <DependentUpon>UploadDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\UploadManagementDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2Browser\UploadManagementDialog.Designer.cs">
+      <DependentUpon>UploadManagementDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AddNewBoardDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddNewBoardDialog.Designer.cs">
+      <DependentUpon>AddNewBoardDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FirstStartUpDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FirstStartUpDialog.Designer.cs">
+      <DependentUpon>FirstStartUpDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MigratedFromOriginalDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MigratedFromOriginalDialog.Designer.cs">
+      <DependentUpon>MigratedFromOriginalDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\PluginSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PluginSetting.Designer.cs">
+      <DependentUpon>PluginSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ReadProductWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ReadProductWindow.Designer.cs">
+      <DependentUpon>ReadProductWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2Browser\IEComponentThreadViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Settings\BlueRushSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Settings\BlueRushSettingForm.Designer.cs">
+      <DependentUpon>BlueRushSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Settings\IDColoringSettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Settings\IDColoringSettingDialog.Designer.cs">
+      <DependentUpon>IDColoringSettingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Settings\IDColorSetDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Settings\IDColorSetDialog.Designer.cs">
+      <DependentUpon>IDColorSetDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SimplePaintDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SimplePaintDialog.Designer.cs">
+      <DependentUpon>SimplePaintDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="PluginInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SplashWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashWindow.Designer.cs">
+      <DependentUpon>SplashWindow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ch2BrowserControl.ja-JP.resx">
+      <DependentUpon>ch2BrowserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2BrowserControl.resx">
+      <DependentUpon>ch2BrowserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\AAManageDialog.resx">
+      <DependentUpon>AAManageDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\AllLoginDialog.resx">
+      <DependentUpon>AllLoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\DockWritePanel.resx">
+      <DependentUpon>DockWritePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\HighNGCollectionEditDialog.resx">
+      <DependentUpon>HighNGCollectionEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\HighNGFunctionDialog.resx">
+      <DependentUpon>HighNGFunctionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\NewThreadWindow.resx">
+      <DependentUpon>NewThreadWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\NGCollectionEditDialog.resx">
+      <DependentUpon>NGCollectionEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\NGFunctionDialog.resx">
+      <DependentUpon>NGFunctionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\RefreshBoardList.resx">
+      <DependentUpon>RefreshBoardList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\SearchNextThreadDialog.resx">
+      <DependentUpon>SearchNextThreadDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\ThreadListNGCollectionEditDialog.resx">
+      <DependentUpon>ThreadListNGCollectionEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\ThreadListNGFunctionDialog.resx">
+      <DependentUpon>ThreadListNGFunctionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\ThreadListSearcher.resx">
+      <DependentUpon>ThreadListSearcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\ThreadListStyleChange.resx">
+      <DependentUpon>ThreadListStyleChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\ThreadListStyleColorChangeForm.resx">
+      <DependentUpon>ThreadListStyleColorChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\ThreadWriteDialog.resx">
+      <DependentUpon>ThreadWriteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\UploadDialog.resx">
+      <DependentUpon>UploadDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2Browser\UploadManagementDialog.resx">
+      <DependentUpon>UploadManagementDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AddNewBoardDialog.resx">
+      <DependentUpon>AddNewBoardDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FirstStartUpDialog.resx">
+      <DependentUpon>FirstStartUpDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MigratedFromOriginalDialog.resx">
+      <DependentUpon>MigratedFromOriginalDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PluginSetting.resx">
+      <DependentUpon>PluginSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ReadProductWindow.resx">
+      <DependentUpon>ReadProductWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Settings\BlueRushSettingForm.resx">
+      <DependentUpon>BlueRushSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Settings\IDColoringSettingDialog.resx">
+      <DependentUpon>IDColoringSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Settings\IDColorSetDialog.resx">
+      <DependentUpon>IDColorSetDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SimplePaintDialog.resx">
+      <DependentUpon>SimplePaintDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashWindow.resx">
+      <DependentUpon>SplashWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VIPBrowserLibrary\VIPBrowserLibrary.csproj">
+      <Project>{f7d9842b-87c4-4dc7-8d6d-ee501fc2bb7a}</Project>
+      <Name>VIPBrowserLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VIPBrowserPlugin\VIPBrowserPlugin.csproj">
+      <Project>{39e92df0-894e-40a9-80c6-df641284c791}</Project>
+      <Name>VIPBrowserPlugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YoutubePlayer\PaintApp\PaintApp.csproj">
+      <Project>{87e6bc3f-44e6-445c-b096-726e305b98d7}</Project>
+      <Name>PaintApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="ja-JP\VIPBrowser.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

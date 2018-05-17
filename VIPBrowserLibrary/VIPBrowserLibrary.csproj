@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VIPBrowserLibrary</RootNamespace>
+    <AssemblyName>VIPBrowserLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\VIPBrowserLibrary.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\VIPBrowserLibrary.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AwaitSet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\AwaitSet.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\syunsuke\Desktop\twin2372src\新しいフォルダー\Twintail Project\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BBS\Common\BoardChild.cs" />
+    <Compile Include="BBS\Common\BoardCategory.cs" />
+    <Compile Include="BBS\Common\CommonThreadListReader.cs" />
+    <Compile Include="BBS\Common\CommonThreadReader.cs" />
+    <Compile Include="BBS\Common\GetBoardList.cs" />
+    <Compile Include="BBS\Common\HttpClient.cs" />
+    <Compile Include="BBS\Common\CommonSimpleThreadReader.cs" />
+    <Compile Include="BBS\Common\IThreadListReader.cs" />
+    <Compile Include="BBS\Common\PostBase.cs" />
+    <Compile Include="BBS\Common\ReadDotNetFile.cs" />
+    <Compile Include="BBS\Common\Samba24.cs" />
+    <Compile Include="BBS\Common\ThreadReaderInterface.cs" />
+    <Compile Include="BBS\Common\WriteRecord.cs" />
+    <Compile Include="BBS\Common\XmlBoardList.cs" />
+    <Compile Include="BBS\Jbbs\JbbsPoster.cs" />
+    <Compile Include="BBS\Jbbs\JbbsSimpleThreadReader.cs" />
+    <Compile Include="BBS\Jbbs\JbbsThreadListReader.cs" />
+    <Compile Include="BBS\Jbbs\JbbsThreadReader.cs" />
+    <Compile Include="BBS\MachiBBS\MachiBBSThreadListReader.cs" />
+    <Compile Include="BBS\MachiBBS\MachiBBSThreadReader.cs" />
+    <Compile Include="BBS\X2ch\AllBoardSercher.cs" />
+    <Compile Include="BBS\X2ch\BeLogin.cs" />
+    <Compile Include="BBS\X2ch\RokkaLogin.cs" />
+    <Compile Include="BBS\X2ch\Ronin.cs" />
+    <Compile Include="BBS\X2ch\X2chPoster.cs" />
+    <Compile Include="BBS\X2ch\X2chSimpleThreadReader.cs" />
+    <Compile Include="BBS\X2ch\X2chThreadListReader.cs" />
+    <Compile Include="BBS\X2ch\X2chThreadReader.cs" />
+    <Compile Include="Chron\Calture.cs" />
+    <Compile Include="Chron\CreateTrip.cs" />
+    <Compile Include="Chron\Encrypt.cs" />
+    <Compile Include="Chron\ILogInterface.cs" />
+    <Compile Include="Chron\Logger.cs" />
+    <Compile Include="Chron\Serializer.cs" />
+    <Compile Include="Chron\ThreadColumn.cs" />
+    <Compile Include="Chron\ThreadOrResData\Abone\AboneManagement.cs" />
+    <Compile Include="Chron\ThreadOrResData\Abone\NGWord.cs" />
+    <Compile Include="Chron\ThreadOrResData\Abone\SimpleAbone.cs" />
+    <Compile Include="Chron\ThreadOrResData\Abone\ThreadListAbone.cs" />
+    <Compile Include="Chron\ThreadOrResData\Anchor.cs" />
+    <Compile Include="Chron\ThreadOrResData\AnchorCollection.cs" />
+    <Compile Include="Chron\ThreadOrResData\AnchorProcessing.cs" />
+    <Compile Include="Chron\ThreadOrResData\ColoringData.cs" />
+    <Compile Include="Chron\ThreadOrResData\HtmlSkin.cs" />
+    <Compile Include="Chron\ThreadOrResData\NextThreadInfo.cs" />
+    <Compile Include="Chron\ThreadOrResData\Res.cs" />
+    <Compile Include="Chron\ThreadOrResData\ResCollection.cs" />
+    <Compile Include="Chron\ThreadOrResData\ResConvert.cs" />
+    <Compile Include="Chron\ThreadOrResData\ResSet.cs" />
+    <Compile Include="Chron\ThreadOrResData\SkinData.cs" />
+    <Compile Include="Chron\ThreadOrResData\ThreadListItemColorRing.cs" />
+    <Compile Include="Chron\ThreadOrResData\ThreadData.cs" />
+    <Compile Include="Chron\TraditionalDES.cs" />
+    <Compile Include="Chron\ZIPData.cs" />
+    <Compile Include="Common\BoardInfo.cs" />
+    <Compile Include="Common\GetBoardData.cs" />
+    <Compile Include="Common\IThreadViewer.cs" />
+    <Compile Include="Common\ThreadListSorter.cs" />
+    <Compile Include="Common\TypeJudgment.cs" />
+    <Compile Include="Common\URLParse.cs" />
+    <Compile Include="Other\AAManagement\AAData.cs" />
+    <Compile Include="Other\AAManagement\ReadAAList.cs" />
+    <Compile Include="Other\AAManagement\WriteAAList.cs" />
+    <Compile Include="Other\HostDenyChecker.cs" />
+    <Compile Include="Other\MicrosoftTranslateService.cs" />
+    <Compile Include="Other\MyExtensions\CodeNameAttribute.cs" />
+    <Compile Include="Other\MyExtensions\DoubleValueDictionary.cs" />
+    <Compile Include="Other\MyExtensions\DoubleValuePair.cs" />
+    <Compile Include="Other\MyExtensions\Extension.cs" />
+    <Compile Include="Other\MyExtensions\GUIExtension\DragAndDropTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Other\MyExtensions\GUIExtension\DropAndDragTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Other\MyExtensions\GUIExtension\IAccessible.cs" />
+    <Compile Include="Other\MyExtensions\GUIExtension\IControl.cs" />
+    <Compile Include="Other\MyExtensions\GUIExtension\ListViewExtension.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Other\MyExtensions\GUIExtension\SingleInputTextBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\MyExtensions\GUIExtension\SingleInputTextBoxForm.Designer.cs">
+      <DependentUpon>SingleInputTextBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\SearchEngineService.cs" />
+    <Compile Include="Other\ServerService\ShareUserData\SettingXml.cs" />
+    <Compile Include="Other\ServerService\UserData.cs" />
+    <Compile Include="Other\StartPageParser.cs" />
+    <Compile Include="Other\UploadService\AxfcService.cs" />
+    <Compile Include="Other\UploadService\DataRequestBase.cs" />
+    <Compile Include="Other\UploadService\ImgurService.cs" />
+    <Compile Include="Other\UploadService\UploadManagement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting\ConvertOtherBrowserData\CheckCanConvert.cs" />
+    <Compile Include="Setting\ConvertOtherBrowserData\ConvertType.cs" />
+    <Compile Include="Setting\ConvertOtherBrowserData\CoverterBase.cs" />
+    <Compile Include="Setting\ConvertOtherBrowserData\IOtherDataConverter.cs" />
+    <Compile Include="Setting\ConvertOtherBrowserData\JaneConverter.cs" />
+    <Compile Include="Setting\ConvertOtherBrowserData\V2CConverter.cs" />
+    <Compile Include="Setting\GeneralSetting.cs" />
+    <Compile Include="Setting\NotNecessarySettingData\SaveThreadListViewData.cs" />
+    <Compile Include="Setting\NotNecessarySettingData\ThreadViewData.cs" />
+    <Compile Include="Setting\PushErrorData.cs" />
+    <Compile Include="Setting\Serialize.cs" />
+    <Compile Include="Setting\Starting.cs" />
+    <Compile Include="Setting\UpdateChecker.cs" />
+    <Compile Include="Utility\Clearner.cs" />
+    <Compile Include="Utility\Exception\AsyncProcessMultipleAccessException.cs" />
+    <Compile Include="Utility\SkinUtility.cs" />
+    <Compile Include="Utility\StringUtility.cs" />
+    <Compile Include="Utility\TaskUtility.cs" />
+    <Compile Include="Utility\TextUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Other\MyExtensions\GUIExtension\SingleInputTextBoxForm.resx">
+      <DependentUpon>SingleInputTextBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Other\ServerService\ShareNGList\" />
+    <Folder Include="Other\ServerService\StoreService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AwaitSet.dll" />
+    <Content Include="HtmlAgilityPack.dll" />
+    <Content Include="HtmlAgilityPack.pdb" />
+    <Content Include="HtmlAgilityPack.XML" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

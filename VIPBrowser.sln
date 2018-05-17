@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIPBrowser", "VIPBrowser\VIPBrowser.csproj", "{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIPBrowserLibrary", "VIPBrowserLibrary\VIPBrowserLibrary.csproj", "{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIPBrowserUnitTestProject", "VIPBrowserUnitTestProject\VIPBrowserUnitTestProject.csproj", "{34B3DB97-EE64-4664-AFE8-FBCE8B84A1DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIPBrowserPlugin", "VIPBrowserPlugin\VIPBrowserPlugin.csproj", "{39E92DF0-894E-40A9-80C6-DF641284C791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinCreateAndParser", "SkinCreateAndParser\SkinCreateAndParser.csproj", "{7EF0B9EC-C531-4E24-872A-A1096F32CF75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintApp", "YoutubePlayer\PaintApp\PaintApp.csproj", "{87E6BC3F-44E6-445C-B096-726E305B98D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9D4A629D-27ED-4EB8-B829-9EB5F6536AD2}"
+	ProjectSection(SolutionItems) = preProject
+		パフォーマンス1.psess = パフォーマンス1.psess
+		パフォーマンス2.psess = パフォーマンス2.psess
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs32
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SkinCreateAndParser\\SkinCreateAndParser.csproj
+		SccProjectName1 = SkinCreateAndParser
+		SccLocalPath1 = SkinCreateAndParser
+		SccProjectUniqueName2 = VIPBrowser\\VIPBrowser.csproj
+		SccProjectName2 = VIPBrowser
+		SccLocalPath2 = VIPBrowser
+		SccProjectUniqueName3 = VIPBrowserLibrary\\VIPBrowserLibrary.csproj
+		SccProjectName3 = VIPBrowserLibrary
+		SccLocalPath3 = VIPBrowserLibrary
+		SccProjectUniqueName4 = VIPBrowserPlugin\\VIPBrowserPlugin.csproj
+		SccProjectName4 = VIPBrowserPlugin
+		SccLocalPath4 = VIPBrowserPlugin
+		SccProjectUniqueName5 = VIPBrowserUnitTestProject\\VIPBrowserUnitTestProject.csproj
+		SccProjectName5 = VIPBrowserUnitTestProject
+		SccLocalPath5 = VIPBrowserUnitTestProject
+		SccProjectUniqueName6 = YoutubePlayer\\PaintApp\\PaintApp.csproj
+		SccProjectName6 = YoutubePlayer/PaintApp
+		SccLocalPath6 = YoutubePlayer\\PaintApp
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Debug|x64.ActiveCfg = Debug|x64
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Debug|x64.Build.0 = Debug|x64
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Debug|x86.ActiveCfg = Debug|x86
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Debug|x86.Build.0 = Debug|x86
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Release|x64.ActiveCfg = Release|x64
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Release|x64.Build.0 = Release|x64
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Release|x86.ActiveCfg = Release|x86
+		{3592379A-4B15-4FB4-8FC3-58F1943D4D5C}.Release|x86.Build.0 = Release|x86
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Debug|x64.ActiveCfg = Debug|x64
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Debug|x64.Build.0 = Debug|x64
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Debug|x86.ActiveCfg = Debug|x86
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Debug|x86.Build.0 = Debug|x86
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Release|x64.ActiveCfg = Release|x64
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Release|x64.Build.0 = Release|x64
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Release|x86.ActiveCfg = Release|x86
+		{F7D9842B-87C4-4DC7-8D6D-EE501FC2BB7A}.Release|x86.Build.0 = Release|x86
+		{34B3DB97-EE64-4664-AFE8-FBCE8B84A1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B3DB97-EE64-4664-AFE8-FBCE8B84A1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B3DB97-EE64-4664-AFE8-FBCE8B84A1DA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{34B3DB97-EE64-4664-AFE8-FBCE8B84A1DA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{34B3DB97-EE64-4664-AFE8-FBCE8B84A1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B3DB97-EE64-4664-AFE8-FBCE8B84A1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34B3DB97-EE64-4664-AFE8-FBCE8B84A1DA}.Release|x64.ActiveCfg = Release|Any CPU
+		{34B3DB97-EE64-4664-AFE8-FBCE8B84A1DA}.Release|x86.ActiveCfg = Release|Any CPU
+		{39E92DF0-894E-40A9-80C6-DF641284C791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E92DF0-894E-40A9-80C6-DF641284C791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E92DF0-894E-40A9-80C6-DF641284C791}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{39E92DF0-894E-40A9-80C6-DF641284C791}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{39E92DF0-894E-40A9-80C6-DF641284C791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E92DF0-894E-40A9-80C6-DF641284C791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E92DF0-894E-40A9-80C6-DF641284C791}.Release|x64.ActiveCfg = Release|Any CPU
+		{39E92DF0-894E-40A9-80C6-DF641284C791}.Release|x86.ActiveCfg = Release|Any CPU
+		{7EF0B9EC-C531-4E24-872A-A1096F32CF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF0B9EC-C531-4E24-872A-A1096F32CF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF0B9EC-C531-4E24-872A-A1096F32CF75}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7EF0B9EC-C531-4E24-872A-A1096F32CF75}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7EF0B9EC-C531-4E24-872A-A1096F32CF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF0B9EC-C531-4E24-872A-A1096F32CF75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF0B9EC-C531-4E24-872A-A1096F32CF75}.Release|x64.ActiveCfg = Release|Any CPU
+		{7EF0B9EC-C531-4E24-872A-A1096F32CF75}.Release|x86.ActiveCfg = Release|Any CPU
+		{87E6BC3F-44E6-445C-B096-726E305B98D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E6BC3F-44E6-445C-B096-726E305B98D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E6BC3F-44E6-445C-B096-726E305B98D7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{87E6BC3F-44E6-445C-B096-726E305B98D7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{87E6BC3F-44E6-445C-B096-726E305B98D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E6BC3F-44E6-445C-B096-726E305B98D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E6BC3F-44E6-445C-B096-726E305B98D7}.Release|x64.ActiveCfg = Release|Any CPU
+		{87E6BC3F-44E6-445C-B096-726E305B98D7}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

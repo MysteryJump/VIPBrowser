@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VIPBrowser.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UseFontfamily" Type="System.Drawing.Font" Scope="Application">
+      <Value Profile="(Default)">Meiryo UI, 9pt</Value>
+    </Setting>
+    <Setting Name="IsThreadViewMultiLine" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IsThreadListViewMultiLine" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ThreadListViewButtonType" Type="System.Windows.Forms.TabAppearance" Scope="Application">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="ThreadViewButtonMode" Type="System.Windows.Forms.TabAppearance" Scope="Application">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
